@@ -1,0 +1,120 @@
+{
+  "package_version": "2.0.1",
+  "run_utc": "2026-11-09T14:28:22.525410+00:00",
+  "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "input_csv": "D:\\TRUST_LUS\\inputs\\predictions_wide.csv",
+  "input_sha256": "ef0508481b875a56dc9818c24209d0bf5e5535b2b01128cc791d1a1c61cee864",
+  "input_bytes": 1718015,
+  "frozen_input_sha256": "EF0508481B875A56DC9818C24209D0BF5E5535B2B01128CC791D1A1C61CEE864",
+  "input_sha_frozen_match": true,
+  "input_read_only": true,
+  "input_rows_raw": 2119,
+  "input_rows_after_seed_aggregation": 2119,
+  "stages_executed": [
+    "p1",
+    "p2",
+    "p3",
+    "p4"
+  ],
+  "legacy_router_column": null,
+  "bootstrap_reps": 2000,
+  "bootstrap_seed": 20261101,
+  "max_auc_gap_source_only": 0.02,
+  "primary_k": 2,
+  "pool_sizes": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "p1_directions": [
+    "DIR-A",
+    "DIR-B"
+  ],
+  "p234_directions": [
+    "DIR-B"
+  ],
+  "target_direction": "DIR-B",
+  "dir_a_target_allowed": false,
+  "primary_models": [
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "m5_primary_routing": false,
+  "m5_allowed_in": "K=5 static pool and rank-type supplementary results only",
+  "m5_tau05_degenerate_cells": [
+    "DIR-A:f2",
+    "DIR-A:f5",
+    "DIR-B:f2"
+  ],
+  "primary_decision_metric": "deltaR_vs_fixed",
+  "p4_evaluation": "cross_fitted_oof + target_after_full_source_fit",
+  "p4_in_sample_official": false,
+  "p4_in_sample_diagnostic_emitted": false,
+  "router_constants": {
+    "features": [
+      "p_pool",
+      "binary_entropy"
+    ],
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "lbfgs",
+    "penalty": "l2",
+    "class_weight": "none",
+    "random_state": 20261101,
+    "refit_on_all_source": true
+  },
+  "pool_selection_uses_target_labels": false,
+  "router_training_uses_target_labels": false,
+  "target_labels_used_only_for_final_evaluation_and_posthoc_diagnostics": true,
+  "e1_e8_modified": false,
+  "go_no_go_thresholds_modified": false,
+  "deltaR_definition": "AUROC(candidate) - AUROC(fixed reference)",
+  "legacy_sidecar": {
+    "path": "D:\\TRUST_LUS\\docs\\TRUST_LUS_next4_deployment\\outputs\\legacy\\legacy\\legacy_router_target_DIR-B.csv",
+    "sha256": "b0ea843bffad1b420b131a8eebfb2136cc1288cb3498316e7989fd446dc74a50",
+    "rows": 374,
+    "source": "legacy M3/M4 router sidecar (p_route only)"
+  },
+  "legacy_sidecar_evaluation_mode": "legacy_replay_sidecar",
+  "gpu_used": false,
+  "model_retraining": false,
+  "split_isolation": "PASS",
+  "assertions": {
+    "A01": "PASS",
+    "A02": "PASS",
+    "A03": "PASS",
+    "A04": "PASS",
+    "A05": "PASS",
+    "A06": "PASS",
+    "A07": "PASS",
+    "A08": "PASS",
+    "A09": "PASS",
+    "A10": "PASS",
+    "A11": "PASS",
+    "A12": "PASS",
+    "A13": "PASS",
+    "A14": "PASS",
+    "A15": "PASS",
+    "A16": "PASS",
+    "A17": "ENFORCED",
+    "A18": "PASS",
+    "A19": "PASS",
+    "A20": "ENFORCED",
+    "A21": "ENFORCED",
+    "A22": "ENFORCED",
+    "A23": "ENFORCED",
+    "A24": "PASS",
+    "A25": "PLANNED",
+    "A26": "PASS",
+    "A27": "PASS",
+    "A28": "N/A"
+  }
+}

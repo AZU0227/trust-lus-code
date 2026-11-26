@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the manuscript and the two source datasets."
+title: "TRUST_LUS — analysis code for reliability-based B-line routing"
+authors:
+  - family-names: "TRUST_LUS authors"
+version: 1.0.0
+date-released: 2026-11-26
+license: MIT
