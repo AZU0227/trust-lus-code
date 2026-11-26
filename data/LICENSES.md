@@ -14,8 +14,8 @@ source-dataset material beyond derived aggregates.
 
 MIT. `Figure2_alternative_no_frames.png` contains no image data from either source dataset.
 
-## Per-clip derived tables (NOT in this repository)
+## Per-clip derived tables (`derived/`)
 
-Deposited separately under the licence of the collection they derive from:
+NOT MIT. Each table follows the licence of the collection it derives from:
 CC BY-NC-SA 4.0 for OpenPOCUS-derived tables, CC BY-NC-ND 4.0 for COVID-BLUeS-derived tables.
-See `data/README_DOI.md`.
+See `derived/LICENSES.md`.

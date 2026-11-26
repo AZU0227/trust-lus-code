@@ -10,6 +10,7 @@ scripts/    analysis scripts written for the reported analyses (pure NumPy; no G
 pipeline/   the frozen model-evaluation and gate-fitting pipeline used for the archived run
 tables/     aggregate result tables (no per-clip identifiers)
 figures/    Figure 1 and the frame-free alternative to Figure 2
+derived/    per-clip derived tables (NOT MIT — see derived/LICENSES.md)
 ```
 
 ## Environment
@@ -39,15 +40,16 @@ python scripts/shared_cluster_sensitivity.py
 No image or video data are redistributed here, and no patient-level information is included.
 
 - **Per-clip derived tables** (pseudonymous clip identifiers, reference labels, model probabilities)
-  are deposited separately: see `data/README_DOI.md`.
+  are in `derived/`. They are **not** MIT-licensed: each table follows the licence of the collection
+  it derives from (CC BY-NC-SA 4.0 or CC BY-NC-ND 4.0). See `derived/LICENSES.md`.
 - OpenPOCUS: CC BY-NC-SA 4.0. COVID-BLUeS: CC BY-NC-ND 4.0. Source-study ethical determinations are
   reported in the manuscript (Stanford IRB protocol 74680; METC azM/UM application no. 2020-2229).
 
 ## Licence
 
-Code: MIT (see `LICENSE`). Aggregate tables: MIT as well, because they contain no source-dataset
-material beyond derived summary statistics. Per-clip tables deposited elsewhere follow the licence of
-the collection they derive from; see `data/LICENSES.md`.
+Code and aggregate tables: MIT (see `LICENSE`), because the aggregate tables contain no source-dataset
+material beyond derived summary statistics. `derived/` is excluded from the MIT grant: each table there
+follows the licence of the collection it derives from. See `derived/LICENSES.md`.
 
 ## Citation
 
